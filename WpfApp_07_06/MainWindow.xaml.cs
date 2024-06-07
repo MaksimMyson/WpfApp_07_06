@@ -37,13 +37,13 @@ namespace WpfApp_07_06
             // Виведення чисел у вказаному діапазоні
             for (int i = start; i <= end; i++)
             {
-                // Виконуємо відображення у UI потоці через Dispatcher
+                
                 Application.Current.Dispatcher.Invoke(() =>
                 {
                     ResultTextBox.AppendText(i.ToString() + Environment.NewLine);
                 });
 
-                Thread.Sleep(200); // Затримка для відображення чисел з приривками
+                Thread.Sleep(200); 
             }
         }
     }
